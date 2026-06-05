@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Plan de Estudios - Creativos Digitales</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "primary": "#E38B21",
+                  "secondary": "#00B4E5",
+                  "tertiary": "#006ba2",
+                  "on-surface-variant": "#64748B",
+                  "on-surface": "#15181c",
+                  "level-inicial": "#E38B21",
+                  "level-primario": "#00B4E5",
+                  "level-secundario": "#006ba2",
+                  "background": "#f8f9ff",
+                  "surface": "#ffffff",
+                  "surface-container-low": "#f3f6fc",
+                  "surface-container-high": "#e5eeff",
+                  "outline-variant": "#cbd5e1",
+                  "inverse-surface": "#006ba2",
+                  "surface-bright": "#f8f9ff",
+                  "bg-gradient-start": "#F8FAFC",
+                  "bg-gradient-end": "#F1F5F9"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "2xl": "1rem",
+                  "full": "9999px"
+          },
+          "spacing": {
+                  "container-max": "1300px",
+                  "margin-desktop": "64px",
+                  "margin-mobile": "16px"
+          },
+          "fontFamily": {
+                  "body-md": ["Outfit"],
+                  "body-lg": ["Outfit"],
+                  "headline-lg-mobile": ["Outfit"],
+                  "title-lg": ["Outfit"],
+                  "label-md": ["Outfit"],
+                  "headline-lg": ["Outfit"],
+                  "display-lg": ["Outfit"],
+                  "headline-md": ["Outfit"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body { font-family: 'Outfit', sans-serif; }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    
+    .card-shadow-custom {
+      box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.07);
+    }
+
+    .hidden-content { display: none; }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fadeIn 0.4s ease-out forwards; }
+    
+    /* Scrollbar para los tabs horizontales */
+    .hide-scrollbar::-webkit-scrollbar {
+        height: 6px;
+    }
+    .hide-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .hide-scrollbar::-webkit-scrollbar-thumb {
+        background: theme('colors.outline-variant');
+        border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-bg-gradient-start to-bg-gradient-end text-on-surface min-h-screen flex flex-col">
+
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative min-h-[600px] flex items-center">
+<div class="absolute inset-0 w-full h-full">
+<img alt="Classroom background" class="w-full h-full object-cover" src="https://dlcdnwebimgs.asus.com/files/media/32bf6b16-cfce-4b5b-b5ad-56139ede9826/V1/1_Adaptive-life-proof-technology-for-K-12_Mobile-1460x720px.png"/>
+<div class="absolute inset-0 bg-inverse-surface/80"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 grid md:grid-cols-2 gap-12 items-center relative z-10 w-full">
+<div>
+<div class="inline-block bg-surface-container-high px-4 py-1 rounded-full text-secondary font-label-md mb-6 shadow-sm font-bold">
+          Plan de Estudios
+        </div>
+<h1 class="text-xl font-bold text-headline-lg-mobile md:text-display-lg font-headline-lg-mobile md:font-display-lg text-primary mb-4 leading-tight drop-shadow-md">
+          CIENCIAS DE LA COMPUTACIÓN
+        </h1>
+<p class="text-body-lg font-body-lg text-surface-bright mb-8 leading-relaxed opacity-90">
+          La presente propuesta tiene como finalidad incorporar de manera progresiva y transversal la enseñanza de la programación y el pensamiento computacional en el sistema educativo formal, desde el nivel inicial hasta el último año del nivel secundario.
+        </p>
+<div class="glass-card rounded-xl p-10 relative overflow-hidden mt-10">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary"></div>
+<h3 class="text-xl font-bold font-title-lg text-secondary mb-4 drop-shadow-sm">Presentación del proyecto</h3>
+<ul class="space-y-3 text-body-md text-on-surface">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<span><strong>La alfabetización digital temprana</strong>, como derecho y necesidad en contextos de transformación tecnológica.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<span><strong>La inclusión de pensamiento computacional</strong> como medio para desarrollar el razonamiento lógico.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<span><strong>La formación docente continua</strong> y situada, entendiendo que la capacitación es clave.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="flex justify-center relative">
+<img alt="Personaje Creativos Digitales" class="w-full max-w-md object-contain relative z-10 hover:scale-105 transition-transform duration-500 floating-animation drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida/AP1WRLtFI4q4fjfBxEm2BKDmPvheOr4vliRqrnM1wDuAcYPKyfX4MNKK9aYQkTyedynmONFd87kWJZK3Qvx1IWX-7yXuTQLortnwdkl8byfAYtSfQ2zBq-T3fNRNyZUB77gpZTeFk0Xn-j0KuHudT5I2jBrU134cs0GZIQ15OCFW_e-NV1d2qzaBm3tsK4ltH5pyhslNPq10nEFnELX18kCHCKt5LhjrCODAc6zfBcQeX86pqS1ITBpmcQRaN9M"/>
+</div>
+</div>
+</section>
+
+<!-- Objetivos & Metodologia Bento Grid -->
+<section class="bg-surface-container-low py-16 border-y border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-12">
+<h2 class="text-4xl md:text-4xl font-black text-primary mb-6 drop-shadow-sm">Objetivos Generales</h2>
+<p class="text-body-lg text-on-surface-variant max-w-3xl mx-auto">Acompañar a las instituciones educativas en la integración curricular de la programación y el pensamiento computacional.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-6 mb-16">
+<div class="bg-surface rounded-xl p-6 shadow-sm border border-outline-variant/20 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">integration_instructions</span>
+</div>
+<h4 class="text-title-lg font-title-lg text-on-surface mb-2">Integrar Programación e IA</h4>
+<p class="text-body-md text-on-surface-variant">Como parte del currículum escolar respetando gradualidad y profundidad.</p>
+</div>
+<div class="bg-surface rounded-xl p-6 shadow-sm border border-outline-variant/20 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+<h4 class="text-title-lg font-title-lg text-on-surface mb-2">Capacitar Docentes</h4>
+<p class="text-body-md text-on-surface-variant">Para impartir contenidos tecnológicos con autonomía mediante formación continua.</p>
+</div>
+<div class="bg-surface rounded-xl p-6 shadow-sm border border-outline-variant/20 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+<div class="w-12 h-12 bg-tertiary/10 rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">admin_panel_settings</span>
+</div>
+<h4 class="text-title-lg font-title-lg text-on-surface mb-2">Ciudadanía Digital</h4>
+<p class="text-body-md text-on-surface-variant">Promover el uso crítico, activo y responsable de la tecnología y entornos virtuales.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Curriculum Explorer (Interactive Dashboard) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20" id="curriculum">
+<div class="text-center mb-12">
+<h2 class="text-4xl md:text-4x font-black text-primary mb-6 drop-shadow-sm">Explorador Curricular</h2>
+<p class="text-body-lg text-on-surface-variant">Descubre los contenidos estructurados por nivel educativo.</p>
+</div>
+
+<!-- Level Navigation -->
+<div class="flex justify-center mb-12">
+<div class="inline-flex bg-surface-container-low rounded-2xl p-2 shadow-inner border border-outline-variant/30 flex-wrap justify-center gap-2">
+<button class="px-8 py-4 rounded-xl text-headline-md font-bold text-on-surface-variant hover:bg-surface hover:shadow-md transition-all flex items-center gap-3 tab-btn bg-surface" data-target="inicial" id="tab-inicial">
+<span class="material-symbols-outlined text-3xl">toys</span> Nivel Inicial
+</button>
+<button class="px-8 py-4 rounded-xl text-headline-md font-bold text-on-surface-variant hover:bg-surface hover:shadow-md transition-all flex items-center gap-3 tab-btn bg-surface" data-target="primario" id="tab-primario">
+<span class="material-symbols-outlined text-3xl">backpack</span> Primario
+</button>
+<button class="px-8 py-4 rounded-xl text-headline-md font-bold text-on-surface-variant hover:bg-surface hover:shadow-md transition-all flex items-center gap-3 tab-btn bg-surface" data-target="secundario" id="tab-secundario">
+<span class="material-symbols-outlined text-3xl">science</span> Secundario
+</button>
+</div>
+</div>
+
+<!-- Level Content Area -->
+<div class="bg-surface rounded-2xl shadow-sm border border-outline-variant/20 p-10 min-h-[600px] transition-all duration-500" id="content-area">
+  <div class="flex justify-center items-center h-64">
+     <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+  </div>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface mt-16 w-full border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto gap-8">
+<div>
+<img alt="Creativos Digitales Logo" class="h-10 object-contain mb-4 filter grayscale opacity-80 hover:grayscale-0 transition-all duration-300" src="https://lh3.googleusercontent.com/aida/AP1WRLte-7yjG_8nJBGRUEDekb3LY7ij-KCUhh9AMgXz_2vrOOTPzUusZFj51wypPzW64RWD_DyiWFE8vAxVcdUyEYSIewI52_uzA1e-C3sIlgq9JbB6gICbOWS5bwdeIbo6kSIEJhCyZZDgEcDj45ANzoBEr1IyFpEr7qhUYvrRjpUw3yL2UIc9ctTa3J95GeZYQTevclqqjaQIPSuf4d-sV5hHfrrs0X4JlitmKcI4qKdIxKTRivIrZdZUKw"/>
+<p class="text-body-md font-body-md text-on-surface-variant">© 2024 Creativos Digitales. Innovación Educativa.</p>
+</div>
+</div>
+</footer>
+
+<script>
+const curriculumDataOriginal = {"institucion":"Creativos Digitales Colegios","titulo":"Plan de Estudios - Ciencias de la Computación","niveles":[{"id":"inicial","nombre":"Inicial","años":[{"id":"sala-3","nombre":"Sala de 3","objetivo":"Fomentar el desarrollo del pensamiento lógico, la noción de secuencia, la ubicación espacial y la expresión simbólica, mediante juegos colaborativos y actividades concretas. Se busca iniciar el camino hacia el pensamiento computacional desde la exploración sensorial, la experimentación corporal, la manipulación de objetos y la expresión a través del juego, sentando las bases para la futura comprensión de conceptos tecnológicos.","ejes":[{"nombre":"Rompecabezas y resolución de problemas","contenidos":["Desarrollo de la percepción visual.","Trabajo colaborativo e individual.","Reconocimiento de partes y totalidad."]},{"nombre":"Patrones","contenidos":["Reproducción de patrones visuales simples (colores, formas).","Comprensión de regularidades.","Aplicación en recorridos físicos."]},{"nombre":"Figuras geométricas","contenidos":["Identificación de formas básicas (círculo, cuadrado, triángulo, rectángulo).","Clasificación y uso en construcciones.","Exploración mediante cuentos."]},{"nombre":"Secuencias","contenidos":["Ordenamiento por colores, tamaños y eventos temporales.","Uso de vocabulario temporal (\"antes\", \"después\", \"primero\").","Representación de rutinas."]},{"nombre":"Ubicación y posiciones espaciales","contenidos":["Comprensión de nociones espaciales básicas.","Ejecución de recorridos con consignas.","Actividades motrices con direccionalidad."]},{"nombre":"Recorridos y caminos","contenidos":["Descubrimiento y creación de caminos.","Uso de flechas como símbolos de dirección.","Resolución de laberintos con y sin obstáculos."]},{"nombre":"Robótica inicial","contenidos":["Introducción al concepto de robot.","Juego corporal de \"ser robot\".","Programación básica con Botley (con guía docente).","Práctica de secuencias."]},{"nombre":"Ciudadanía digital: contraseñas","contenidos":["Introducción a la noción de privacidad.","Diferenciación entre lo público y lo privado.","Uso simbólico de claves (patrones de desbloqueo, etc.)."]},{"nombre":"Educación Socioemocional","contenidos":["Reconocer y expresar emociones básicas como la alegría, la tristeza y el enojo utilizando gestos y palabras simples.","Aprender estrategias de calma como abrazarse o respirar junto al docente.","Compartir con los compañeros a través del juego, escuchar, esperar turnos y respetar rutinas como la fila o la canción de guardar.","Cuidar juguetes, materiales y plantas fomentando la responsabilidad compartida.","Resolver situaciones cotidianas con ayuda del adulto, pedir lo que se necesita y expresar deseos de manera adecuada."]}]},{"id":"sala-4","nombre":"Sala de 4","objetivo":"Afianzar las habilidades cognitivas iniciales del pensamiento computacional a través de experiencias lúdicas, visuales y simbólicas. Se busca que los/as estudiantes reconozcan y expresen secuencias, patrones, algoritmos simples y acciones codificadas; que comiencen a vincular sus acciones con resultados previsibles y se inicien en la interacción con robots y entornos digitales básicos, promoviendo la creatividad, el trabajo colaborativo y la lógica secuencial.","ejes":[{"nombre":"Algoritmos","contenidos":["Comprensión de los algoritmos como conjunto de pasos ordenados.","Representación de recorridos con flechas.","Planificación de caminos hacia un objetivo."]},{"nombre":"Codificación","contenidos":["Introducción a la codificación simbólica.","Anotación secuencial de instrucciones.","Decodificación de mensajes a partir de símbolos o colores."]},{"nombre":"Patrones","contenidos":["Copia y reproducción de patrones visuales (colores, formas).","Reconocimiento de regularidades.","Ejercitación de la memoria visual a través del juego."]},{"nombre":"Secuencias","contenidos":["Construcción de secuencias simples (colores, objetos, rutinas).","Uso de lenguaje temporal (\"primero\", \"después\", \"ahora\").","Reconocimiento de secuencias en lo cotidiano."]},{"nombre":"Robótica Inicial","contenidos":["Introducción al concepto de robot y su programación básica.","Uso de robots educativos (Botley/Blue-Bot).","Programación de recorridos sencillos con ayuda docente.","Representación de instrucciones con secuencias y tableros."]},{"nombre":"Dispositivos Computacionales","contenidos":["Reconocimiento y exploración de diversos dispositivos digitales.","Introducción a sus funciones y usos en la vida diaria.","Relación entre dispositivo, acción y aplicación."]},{"nombre":"Programación Visual (Scratch Junior)","contenidos":["Primer contacto con bloques de programación.","Agregado y manipulación de personajes, fondos y movimientos.","Creación de historias con secuencias programadas.","Identificación y corrección de errores en secuencias."]},{"nombre":"Pensamiento Computacional Lúdico","contenidos":["Juegos colaborativos de lógica y planificación.","Construcción de proyectos en equipo con roles rotativos.","Desarrollo de estrategias para resolución de problemas tecnológicos simples."]},{"nombre":"Educación Socioemocional","contenidos":["Reconocer más emociones como miedo, sorpresa y vergüenza.","Poner en palabras cómo me siento para expresar con mayor claridad las emociones.","Aprender y practicar estrategias de autorregulación para manejar las emociones de manera adecuada.","Participar en juegos cooperativos y construir lazos de amistad con los compañeros.","Escuchar y participar en la ronda favoreciendo la comunicación grupal.","Respetar los acuerdos del aula como parte de la convivencia diaria.","Cuidar de sí mismo a través de la higiene y el orden, y cuidar el entorno compartido.","Resolver pequeños conflictos con palabras, como pedir perdón u ofrecer un turno."]}]},{"id":"sala-5","nombre":"Sala de 5","objetivo":"Consolidar las bases del pensamiento computacional mediante propuestas lúdicas, visuales y simbólicas que permitan a los/as estudiantes expresar ideas en forma secuencial, identificar patrones, interpretar algoritmos y comenzar a programar con asistencia. Se busca desarrollar habilidades vinculadas a la lógica, la planificación, la observación, el trabajo colaborativo y la experimentación con dispositivos tecnológicos y lenguajes visuales de programación.","ejes":[{"nombre":"Dispositivos Computacionales","contenidos":["Exploración y reconocimiento de dispositivos digitales (PC, tablet, teclado, buscadores).","Uso de funciones básicas.","Primer contacto con herramientas de búsqueda."]},{"nombre":"Algoritmos y Anotaciones","contenidos":["Reconocimiento de algoritmos como secuencias ordenadas.","Anotación simbólica con flechas, formas y claves visuales.","Planeamiento de recorridos y caminos."]},{"nombre":"Patrones y Lógica Visual","contenidos":["Reproducción de patrones por forma, color y dirección.","Aplicación en contextos lúdicos (ciudad, tránsito, juegos).","Trabajo colaborativo con tableros visuales."]},{"nombre":"Secuencias","contenidos":["Ordenamiento por colores, tamaños y eventos temporales.","Uso de vocabulario temporal (\"antes\", \"después\", \"primero\").","Representación de rutinas."]},{"nombre":"Secuencias Numéricas y Cotidianas","contenidos":["Armado y completado de secuencias numéricas del 1 al 10.","Correspondencia número-cantidad.","Ordenamiento creciente y decreciente.","Relación entre números y recorridos."]},{"nombre":"Ubicación y Posiciones Espaciales","contenidos":["Interpretación de instrucciones espaciales simples.","Localización de objetos en tableros y recorridos.","Actividades de referencia visual con planos y flechas."]},{"nombre":"Robótica Inicial (Botley / Blue-Bot)","contenidos":["Introducción y repaso del uso de robots educativos.","Programación guiada de recorridos.","Ejecución de secuencias con consignas lógicas.","Asociaciones entre letras, números y destinos."]},{"nombre":"Scratch Junior","contenidos":["Introducción al entorno de programación visual.","Uso de bloques de movimiento, personajes y escenarios.","Creación de historias secuenciadas y resolución de desafíos.","Asociación entre instrucciones y acciones del personaje."]},{"nombre":"Pensamiento Computacional Aplicado","contenidos":["Juegos de simulación y prueba-error.","Interpretación de consignas con múltiples soluciones.","Desarrollo de estrategias propias y reflexión sobre las acciones realizadas."]},{"nombre":"Educación Socioemocional","contenidos":["Reconocer y diferenciar emociones más complejas como orgullo y celos.","Identificar qué provoca una emoción en diferentes situaciones.","Usar estrategias para manejar el enojo o la tristeza de manera adecuada.","Fortalecer la amistad y la confianza en el grupo a través de experiencias compartidas.","Comunicar lo que pienso y siento con respeto hacia los demás.","Respetar normas colectivas y comprender su sentido para favorecer la convivencia.","Ejercer autonomía en el cuidado personal y asumir responsabilidad con el entorno.","Resolver conflictos con estrategias de diálogo, como negociar o pedir ayuda cuando sea necesario."]}]}]},{"id":"primario","nombre":"Primario","años":[{"id":"1-grado","nombre":"1.º grado","objetivo":"Introducir a los/as estudiantes en el uso consciente, funcional y reflexivo de las tecnologías digitales, promoviendo el desarrollo del pensamiento computacional a través del reconocimiento de algoritmos, patrones, secuencias y estructuras lógicas. Se busca que los/as alumnos/as inicien la programación en bloques mediante entornos visuales, desarrollen habilidades digitales básicas y adquieran nociones fundamentales sobre ciudadanía digital, inteligencia artificial y cuidado del entorno tecnológico.","ejes":[{"nombre":"Alfabetización Digital - Manejo básico de dispositivos","contenidos":["Componentes de la computadora (monitor, teclado, mouse).","Prácticas con GCompris y Genially para desarrollar habilidades motrices y digitales básicas."]},{"nombre":"Tecnología y Ciudadanía Digital","contenidos":["Concepto y evolución de la tecnología.","Diferencia entre elementos naturales y artificiales.","TIC y su impacto.","Datos personales y seguridad digital."]},{"nombre":"Programación - Algoritmos y Secuencias","contenidos":["Introducción al concepto de algoritmo como secuencia de pasos.","Actividades con historias y flechas para guiar personajes.","Inicio de la programación en bloques."]},{"nombre":"Programación - Introducción a Pilas Bloques","contenidos":["Exploración del entorno de programación.","Construcción de programas secuenciales.","Identificación de errores y corrección de fallas en la ejecución."]},{"nombre":"Programación - Patrones y Codificación","contenidos":["Identificación, reproducción y creación de patrones.","Codificación con lenguajes secretos (murciélago, códigos simbólicos)."]},{"nombre":"Programación - Bucles y Estructuras Repetitivas","contenidos":["Introducción al concepto de bucle.","Programación de repeticiones en Pilas Bloques y Code.org.","Optimización de secuencias."]},{"nombre":"Programación - Proyectos integrados y aplicación","contenidos":["Integración de contenidos en proyectos lúdicos: medioambiente, deportes, sistema solar, animales en peligro.","Afianzamiento del uso de bucles y programación eficiente."]},{"nombre":"Inteligencia Artificial (IA)","contenidos":["Noción básica de IA como simulación del pensamiento humano.","Reconocimiento de ejemplos cotidianos de IA.","Clasificación de patrones y juegos simulados."]},{"nombre":"Educación Socioemocional","contenidos":["Reconozco emociones básicas y las nombro.","Expreso cómo me siento (con palabras, dibujos).","Estrategias para calmarme (respirar, contar hasta 10).","Trabajo en equipo: colaborar en juegos y tareas.","Escucho y respeto turnos. Comunicación clara: decir lo que pienso con respeto.","Amistad: ser buen compañero.","Cuidar de sí mismo y del aula. Resolver conflictos sencillos con ayuda del adulto."]}]},{"id":"2-grado","nombre":"2.º grado","objetivo":"Consolidar las bases del pensamiento computacional y digital, desarrollando habilidades para resolver problemas mediante la programación, comprender los fundamentos de la robótica y fortalecer su alfabetización digital y emocional. El propósito es que comiencen a ver la tecnología como una herramienta para crear, comunicar, jugar y pensar de manera lógica y colaborativa, incorporando también nociones iniciales sobre inteligencia artificial y ciudadanía digital responsable.","ejes":[{"nombre":"Programación - Secuencias","contenidos":["Revisión del concepto de algoritmo.","Resolución de problemas con Pilas Bloques y Gobstones.","Comprensión y aplicación de secuencias lógicas."]},{"nombre":"Programación - Bucles y Repeticiones","contenidos":["Introducción y uso de bucles simples y anidados.","Ejercitación con personajes y desafíos interactivos.","Reutilización de patrones para optimizar código."]},{"nombre":"Programación - Eventos y Condicionales","contenidos":["Reconocimiento de eventos como disparadores de acciones.","Introducción a condicionales \"si-entonces\" en Pilas Bloques.","Combinación de estructuras para resolver situaciones más complejas."]},{"nombre":"Programación - Patrones y Pensamiento Lógico","contenidos":["Identificación, reproducción y creación de patrones secuenciales y visuales.","Introducción a estrategias de resolución a partir de regularidades.","Aplicación de patrones en juegos y retos."]},{"nombre":"Robótica - Introducción a Makey Makey","contenidos":["La Electricidad - Conceptos básicos de la energía eléctrica.","La conductividad: Materiales conductores y aislantes.","Circuitos electrónicos: Construyendo caminos eléctricos.","La placa Makey Makey: Una herramienta educativa."]},{"nombre":"Robótica - Conductores Inorgánicos","contenidos":["El aluminio: El metal más abundante.","Más metales: Los mejores conductores.","El agua: Un conductor líquido.","El grafito: El hermano del diamante."]},{"nombre":"Alfabetización Digital","contenidos":["Reconocimiento de las partes de una computadora.","Diferenciación entre hardware y software.","Concepto y evolución de las TIC.","Nociones básicas sobre Inteligencia Artificial y su aplicación en la vida cotidiana."]},{"nombre":"Ciudadanía Digital","contenidos":["Importancia de la protección de datos personales.","Creación y uso seguro de contraseñas.","Identificación de situaciones de riesgo: ciberbullying, grooming.","Normas de convivencia digital y uso responsable de dispositivos."]},{"nombre":"Cápsulas digitales complementarias","contenidos":["Archivos y carpetas digitales.","Procesador de texto: escritura, edición y formato.","Educación financiera básica.","Uso de presentaciones digitales como medio de comunicación."]},{"nombre":"Inteligencia Artificial (IA)","contenidos":["Noción básica de IA como simulación del pensamiento humano.","Reconocimiento de ejemplos cotidianos de IA.","Clasificación de patrones y juegos simulados."]},{"nombre":"Educación Socioemocional","contenidos":["Ampliar el vocabulario emocional incorporando emociones como vergüenza y sorpresa.","Reconocer emociones en los demás a través de la observación y la empatía.","Practicar estrategias de autocontrol como hacer una pausa o pedir ayuda cuando sea necesario.","Colaborar en pequeños proyectos grupales favoreciendo la cooperación.","Explorar formas de expresión y diferenciar entre una comunicación amable y una agresiva.","Respetar las diferencias entre los compañeros.","Asumir responsabilidad en tareas cotidianas dentro del aula y el entorno.","Resolver conflictos con diálogo simple, encontrando acuerdos con el apoyo del adulto."]}]},{"id":"3-grado","nombre":"3.º grado","objetivo":"Profundizar en el pensamiento computacional, la programación creativa y la comprensión del mundo tecnológico, fortaleciendo su capacidad para diseñar, construir y reflexionar sobre proyectos digitales y robóticos. Se busca que puedan programar, experimentar, crear y colaborar, comprendiendo los principios lógicos y éticos del uso de la tecnología. Al mismo tiempo, se promueve el desarrollo emocional, la ciudadanía digital responsable y la curiosidad científica como pilares del aprendizaje integral.","ejes":[{"nombre":"Pensamiento computacional","contenidos":["Algoritmos: definición y práctica.","Secuencias y patrones.","Bucles: uso para optimización de tareas repetitivas.","Eventos: interacción por entradas del usuario (clic, teclado, etc.)."]},{"nombre":"Programación - Introducción a Sprite Lab","contenidos":["Introducción al entorno visual de Code.org.","Uso de sprites, coordenadas, fondos y textos.","Programación de movimiento, eventos y condiciones.","Desarrollo de videojuegos simples con comportamientos personalizados."]},{"nombre":"Programación - Condicionales y lógica avanzada","contenidos":["Introducción a los condicionales (\"si-entonces\").","Uso de decisiones múltiples en videojuegos.","Aplicación de comportamientos para personajes.","Creación de lógica interactiva y juegos con resultados variados."]},{"nombre":"Programación - Proyectos y creación de videojuegos","contenidos":["Creación de chatbots simples.","Programación de minijuegos (recolectar objetos, evitar obstáculos, cumplir misiones).","Mascotas virtuales con respuestas a acciones del jugador.","Proyecto final: videojuego propio."]},{"nombre":"Programación - Variables y texto","contenidos":["Introducción a variables simples.","Interacción usuario-programa: tarjetas personalizadas, contadores, tiempos.","Uso del texto como medio de retroalimentación y contenido en el juego.","Animaciones educativas con texto."]},{"nombre":"Robótica - Conductores Orgánicos","contenidos":["Alimentos Conductores: frutas y verduras.","Conductores Verdes: las plantas.","Somos Conductores: el cuerpo humano.","Un refrigerio Conductor: la gelatina."]},{"nombre":"Robótica - Creati-Labs","contenidos":["La Guitarra.","El Joystick.","Tablero Interactivo.","Cáscaras Eléctricas."]},{"nombre":"Cápsulas digitales complementarias","contenidos":["Archivos y carpetas digitales.","Procesador de texto: escritura, edición y formato.","Educación financiera básica.","Uso de presentaciones digitales como medio de comunicación."]},{"nombre":"Inteligencia Artificial (IA)","contenidos":["Noción básica de IA como simulación del pensamiento humano.","Reconocimiento de ejemplos cotidianos de IA.","Clasificación de patrones y juegos simulados."]},{"nombre":"Ciudadanía digital","contenidos":["Qué es internet y cómo funciona.","Partes de un navegador web.","Seguridad digital: contraseñas seguras, phishing, privacidad.","Uso responsable y consciente de la web y redes sociales."]},{"nombre":"Educación Socioemocional","contenidos":["Reconocer fortalezas y desafíos personales para favorecer el autoconocimiento.","Identificar emociones más complejas como la frustración y el orgullo.","Aplicar estrategias para manejar el enojo o la tristeza, como escribir en un diario emocional o recurrir al rincón de calma.","Practicar la empatía en la amistad, comprendiendo y acompañando al otro.","Colaborar en juegos y asumir roles dentro del grupo para fortalecer la cooperación.","Respetar reglas de convivencia y acuerdos de aula como base de la vida escolar.","Tomar decisiones simples, por ejemplo sobre el uso del tiempo o el compartir materiales.","Resolver conflictos utilizando estrategias como negociar o pedir perdón con el acompañamiento del adulto."]}]},{"id":"4-grado","nombre":"4.º grado","objetivo":"Profundizar en la comprensión, el uso y la creación con tecnologías digitales, fortaleciendo su capacidad para pensar, programar y actuar de manera crítica, creativa y responsable en entornos tecnológicos. A través del trabajo con computadoras, sistemas operativos, pensamiento computacional, programación en Scratch e Inteligencia Artificial, se espera que desarrollen competencias para comprender el funcionamiento de la computadora y su evolución, aplicar el pensamiento computacional, diseñar y programar proyectos interactivos y videojuegos, explorar la IA, ejercer una ciudadanía digital responsable e incorporar herramientas tecnológicas transversales.","ejes":[{"nombre":"Alfabetización digital - Computadoras y sistemas operativos","contenidos":["Historia de las computadoras y su evolución.","Partes y componentes de la computadora.","Sistemas operativos.","Encriptación de información."]},{"nombre":"Alfabetización digital - Pensamiento computacional","contenidos":["Descomposición de problemas complejos en pasos simples.","Escritura de algoritmos usando flechas y pseudocódigo visual.","Uso de coordenadas en planos cartesianos (X, Y)."]},{"nombre":"Programación - Introducción a Scratch 3.0","contenidos":["Primeros pasos en Code.org con desafíos de lógica y control de flujo.","Exploración y creación de proyectos en Scratch 3.0.","Manipulación de sprites, disfraces, fondos y escenarios.","Guardado y publicación de proyectos."]},{"nombre":"Programación - Animaciones y videojuegos","contenidos":["Movimiento de personajes en el plano.","Uso de bucles, eventos y condiciones para generar acciones dinámicas.","Sincronización de diálogos y disfraces.","Creación de videojuegos narrativos e interactivos."]},{"nombre":"Programación - Comunicación entre objetos (Mensajes)","contenidos":["Envío y recepción de mensajes entre sprites.","Interacciones por eventos disparadores.","Secuenciación de respuestas programadas entre personajes."]},{"nombre":"Programación - Variables y lógica de control","contenidos":["Introducción a variables: qué son y para qué sirven.","Uso de variables para contar puntos, vidas, tiempo, velocidad, etc.","Integración de variables en juegos de reacción rápida o desafíos."]},{"nombre":"Robótica - Introducción a la placa Makey Makey","contenidos":["La electricidad - Conceptos básicos de la energía eléctrica.","La conductividad - Materiales conductores y aislantes.","Circuitos electrónicos - Construyendo caminos eléctricos simples.","La placa Makey Makey - Una herramienta educativa."]},{"nombre":"Robótica - Explorando Conductores con Makey Makey","contenidos":["Conductores inorgánicos (parte 1) - Metales.","Conductores inorgánicos (parte 2) - Agua y Grafito.","Conductores orgánicos (parte 1) - Frutas y plantas.","Conductores orgánicos (parte 2) - La piel, somos conductores."]},{"nombre":"Robótica - Fusionando Scratch con Makey Makey","contenidos":["Programación en Scratch usando eventos para responder a señales de Makey Makey.","Usando la placa como joystick - Diseñando juegos simples.","Creando botones con eventos para responder a señales.","Creando un Joystick para juegos con Makey Makey."]},{"nombre":"Robótica - CreatiLabs: Proyectos creativos","contenidos":["Juego \"Operando\".","Juego \"Escapando del laberinto\".","El juego de la memoria.","Un robot bailarín."]},{"nombre":"Inteligencia Artificial - Descubriendo la IA","contenidos":["¿Qué es la Inteligencia Artificial? - Diferenciar inteligencia humana y artificial.","Máquinas que Aprenden - Descubrir el Machine Learning.","Entrenemos a una Máquina - Simular el aprendizaje automático.","Nuestra Primera IA - Usar Teachable Machine para entrenar una IA que reconozca imágenes."]},{"nombre":"Inteligencia Artificial - Crear proyectos con IA","contenidos":["IA que Reconoce Imágenes - Entrenar un modelo y usarlo en Scratch.","IA que Entiende Textos - Crear un modelo que clasifica textos.","IA en el Mundo Real - Conocer distintas IA especializadas y aprender prompts.","Proyecto Final: Juego Inteligente con IA que distingue colores y suma puntajes."]},{"nombre":"Ciudadanía digital","contenidos":["Reconocimiento y diferenciación entre información pública y privada.","Prevención del cyberbullying y el grooming.","Introducción a la seguridad informática: contraseñas seguras y cuidado de datos personales."]},{"nombre":"Tecnologías transversales","contenidos":["Manejo de Hojas de Cálculo: celdas, fórmulas básicas, gráficos y filtros.","Uso de herramientas Google: Drive, Docs, Gmail, Photos.","Integración de herramientas para documentar o enriquecer proyectos de programación."]},{"nombre":"Educación socioemocional","contenidos":["Reconocer qué me sale bien y qué necesito mejorar para desarrollar la autoconciencia.","Manejar emociones intensas como los celos y la envidia.","Poner esfuerzo y perseverancia frente a los desafíos para alcanzar metas.","Practicar la empatía comprendiendo lo que sienten los demás.","Fortalecer la amistad, la confianza y el respeto en las relaciones interpersonales.","Asumir responsabilidad colectiva en el cuidado del grupo y en proyectos compartidos.","Tomar decisiones responsables vinculadas al estudio y al uso del tiempo libre.","Aplicar estrategias más elaboradas de resolución de conflictos, incluyendo la mediación con pares."]}]},{"id":"5-grado","nombre":"5.º grado","objetivo":"Consolidar y ampliar las habilidades de pensamiento computacional y programación, alcanzando un dominio más autónomo y reflexivo del uso de la tecnología. A través del trabajo con Scratch, proyectos de certificación internacional, herramientas digitales y educación socioemocional, se espera que los alumnos profundicen en la lógica de programación, comprendan procedimientos y parámetros, integren condicionales en proyectos interactivos, se preparen para la certificación internacional en Scratch, se introduzcan en la robótica educativa (Micro:bit), ejerzan una ciudadanía digital responsable y empleen herramientas digitales transversales.","ejes":[{"nombre":"Programación - Repaso de programación y animaciones","contenidos":["Revisión de conceptos de animación, bucles, variables y mensajería en Scratch.","Desarrollo de un proyecto integrador que combine los conceptos trabajados.","Uso de disfraces, movimiento con coordenadas y control de flujo."]},{"nombre":"Programación - Procedimientos","contenidos":["Introducción al concepto de procedimiento como bloque personalizado.","Creación de acciones reutilizables para simplificar el código.","Desarrollo de juegos y actividades aplicando procedimientos y eventos."]},{"nombre":"Programación - Condicionales","contenidos":["Uso de bloques condicionales para controlar decisiones en el programa.","Detección de colisiones y eventos en videojuegos.","Desarrollo de animaciones y juegos con lógica basada en decisiones (if-then).","Integración de condicionales con sensores, disfraces y mensajería."]},{"nombre":"Programación - Procedimientos con parámetros","contenidos":["Introducción al uso de parámetros numéricos y alfabéticos.","Creación de animaciones que respondan a distintos valores dinámicos.","Aplicación de procedimientos con parámetros en contextos matemáticos (ej: tablas).","Desarrollo de proyectos con múltiples variables controladas."]},{"nombre":"Certificación Internacional en Scratch","contenidos":["Se entregarán 9 proyectos en Scratch para certificar en un examen internacional."]},{"nombre":"Robótica - Microbit","contenidos":["En desarrollo - disponible Q1 2026."]},{"nombre":"Ciudadanía digital","contenidos":["Reconocimiento y diferenciación entre información pública y privada.","Prevención del cyberbullying y el grooming.","Introducción a la seguridad informática: contraseñas seguras y cuidado de datos personales."]},{"nombre":"Tecnologías transversales","contenidos":["Manejo de Hojas de Cálculo: celdas, fórmulas básicas, gráficos y filtros.","Uso de herramientas Google: Drive, Docs, Gmail, Photos.","Integración de herramientas para documentar o enriquecer proyectos de programación."]},{"nombre":"Educación socioemocional","contenidos":["Reconocer emociones contradictorias como alegría y miedo, o tristeza y orgullo.","Desarrollar la autoconfianza y la autoestima para fortalecer el crecimiento personal.","Utilizar estrategias de autorregulación más autónomas.","Practicar la solidaridad y la cooperación dentro de la comunidad escolar y social.","Ejercer una comunicación asertiva, pidiendo, diciendo que no o expresando desacuerdos con respeto.","Asumir un liderazgo positivo en el grupo.","Cumplir con la responsabilidad en compromisos escolares y personales.","Negociar y resolver conflictos complejos aplicando el diálogo y la búsqueda de acuerdos."]}]},{"id":"6-grado","nombre":"6.º grado","objetivo":"Integrar los saberes adquiridos en los ciclos anteriores para crear, analizar y aplicar soluciones tecnológicas más complejas, uniendo programación, robótica, inteligencia artificial y pensamiento computacional avanzado. A través del trabajo con MakeCode Arcade, Arduino, TinkerCAD e Inteligencia Artificial aplicada, se busca que los alumnos comprendan los fundamentos de la creación de videojuegos, diseñen proyectos interactivos complejos, apliquen procedimientos y parámetros, desarrollen proyectos de robótica avanzada, reconozcan el funcionamiento de la IA y ejerzan una ciudadanía digital responsable.","ejes":[{"nombre":"Programación - Introducción a Arcade y fundamentos de programación","contenidos":["Exploración de videojuegos existentes para comprender su construcción.","Primeros pasos con MakeCode Arcade: uso de sprites y Pixel Art.","Introducción al género \"clicker\" y programación de condicionales simples.","Aplicación de coordenadas y números aleatorios para generar variabilidad."]},{"nombre":"Programación - Diseño de juego y géneros","contenidos":["Creación de animaciones personalizadas para enriquecer el gameplay.","Comprensión del concepto de jugabilidad (gameplay).","Programación de géneros como Bullet Hell y juegos de asteroides.","Participación en una GameJam con diseño y programación en tiempo limitado."]},{"nombre":"Programación - Diseño de mundos y plataformas","contenidos":["Introducción a las funciones como bloques reutilizables.","Uso de parámetros numéricos y alfabéticos para modificar comportamientos.","Desarrollo de videojuegos con múltiples niveles usando funciones personalizadas.","Creación de Escape Rooms con funciones parametrizadas."]},{"nombre":"Programación - Procedimientos con parámetros","contenidos":["Introducción al uso de parámetros numéricos y alfabéticos.","Creación de animaciones que respondan a distintos valores dinámicos.","Aplicación de procedimientos con parámetros en contextos matemáticos.","Desarrollo de proyectos con múltiples variables controladas."]},{"nombre":"Robótica - Fundamentos de la Electrónica","contenidos":["La Electrónica - Descubrir qué es la electrónica y su importancia cotidiana.","LEDs y resistencias - Cómo funcionan en circuitos eléctricos.","Introducción a TinkerCAD - Simular y diseñar circuitos digitales.","Circuitos Electrónicos - Construir el primer circuito."]},{"nombre":"Robótica - Introducción a la Robótica con Arduino","contenidos":["Introducción a la Robótica y Arduino - Conocer qué es un robot y explorar la placa Arduino.","Arduino en Bloques - Programar Arduino mediante bloques.","Sonido y Movimiento en Robótica - Componentes que generan sonido y movimiento.","Profundizando en Arduino - Proyectos más complejos."]},{"nombre":"Robótica - Sensores y Automatización","contenidos":["Programación avanzada en TinkerCAD.","El sensor de luz - Medir la luz y programar su comportamiento.","El sensor de temperatura - Medir temperatura y aplicarlo en proyectos interactivos.","El sensor de ultrasonido - Cómo los robots miden distancias."]},{"nombre":"Robótica - Robótica Aplicada y Buenas Prácticas","contenidos":["Casos Prácticos - Resolver desafíos de robótica y programación.","Componentes Electrónicos - Nuevos componentes y sus usos.","Buenas Prácticas - Metodologías para diseñar circuitos seguros y eficientes."]},{"nombre":"Ciudadanía digital","contenidos":["Reconocimiento y diferenciación entre información pública y privada.","Prevención del cyberbullying y el grooming.","Introducción a la seguridad informática: contraseñas seguras y cuidado de datos personales."]},{"nombre":"Tecnologías transversales","contenidos":["Manejo de Hojas de Cálculo: celdas, fórmulas básicas, gráficos y filtros.","Uso de herramientas Google: Drive, Docs, Gmail, Photos.","Integración de herramientas para documentar o enriquecer proyectos de programación."]},{"nombre":"Educación socioemocional","contenidos":["Fortalecer la autoconciencia y proyectar un plan personal.","Manejar emociones vinculadas a cambios y transiciones.","Aplicar estrategias de afrontamiento como la relajación y la búsqueda de apoyo.","Practicar la empatía y la responsabilidad social.","Cuidar la amistad y los vínculos en la preadolescencia.","Reconocer normas, derechos y responsabilidades en la comunidad.","Tomar decisiones éticas considerando consecuencias y valores.","Resolver conflictos con pensamiento crítico y diálogo."]}]}]},{"id":"secundario","nombre":"Secundario","años":[{"id":"1-anio","nombre":"1.º año","objetivo":"Integrar y aplicar conocimientos de programación, robótica y desarrollo de aplicaciones móviles para diseñar soluciones tecnológicas funcionales, creativas y éticas. A través del trabajo con Gobstones, Arduino, TinkerCAD y App Inventor, se busca que los alumnos comprendan el funcionamiento de las computadoras, apliquen el pensamiento computacional, programen en Gobstones Bloques, exploren fundamentos de electrónica y robótica, diseñen y programen robots con Arduino, implementen proyectos de domótica, creen aplicaciones móviles con App Inventor y desarrollen una conciencia digital responsable.","ejes":[{"nombre":"Alfabetización Digital","contenidos":["Introducción a las computadoras y sus usos cotidianos.","Historia y evolución de las computadoras.","Diferencias entre hardware y software.","Introducción a Internet, navegadores y buscadores.","Seguridad básica en línea."]},{"nombre":"Programación - Primeros pasos con Gobstones Bloques","contenidos":["Comprensión de algoritmos en la vida cotidiana.","Escritura de instrucciones con lenguaje gráfico (flechas).","Introducción al entorno de programación Gobstones en bloques."]},{"nombre":"Programación - Creación y reutilización de instrucciones - Gobstones","contenidos":["Comandos básicos en Gobstones: mover, poner, sacar.","Resolución de problemas a través de juegos interactivos."]},{"nombre":"Programación - Repeticiones y eficiencia en el código - Gobstones","contenidos":["Uso de procedimientos para evitar repeticiones.","Descomposición de problemas en subtareas."]},{"nombre":"Robótica - Repaso y Fundamentos de la Electrónica","contenidos":["Repasar conceptos clave de electrónica antes de iniciar nuevos proyectos.","Simulando Circuitos Electrónicos en plataforma digital.","La Placa Arduino - El \"cerebro\" que controla sistemas automáticos.","Sensores (Luz, Temperatura y Ultrasonido) para percibir el entorno."]},{"nombre":"Robótica - Programación y Control en Arduino","contenidos":["Programando en Arduino con operadores lógicos AND y OR.","El Servomotor y el Potenciómetro - Movimiento y control analógico.","El Display - Mostrar información e interacción con el usuario.","Experimentando con Circuitos - Proyecto libre con todos los componentes."]},{"nombre":"Robótica - Construcción de Robots y Sistemas Interactivos","contenidos":["Los Ardubots - Primer robot autónomo combinando sensores y actuadores.","El Teclado Matricial - Programar entradas de datos en TinkerCAD.","La Pantalla LCD - Proyectar datos y mensajes.","Ardubots 2.0 - Versión avanzada incorporando nuevos componentes."]},{"nombre":"Robótica - Sensores Avanzados y Domótica","contenidos":["El Sensor de Humedad - Medir humedad del ambiente o suelo.","El Sensor de Flexión y Conductividad - Materiales conductores y sensores.","El Sensor PIR y Domótica - Detectar movimiento en casas inteligentes.","La Casa del Futuro - Diseñar una casa automatizada con todos los conocimientos."]},{"nombre":"App Inventor - Primeros pasos","contenidos":["Aplicaciones móviles – Crear la primera app en App Inventor.","Interfaces – Diseñar una app de saludo con etiquetas, campos de texto e imágenes.","Variables – Construir un juego clicker usando variables y cambios de pantalla.","Pixels y porcentajes – Agregar una tienda al juego y descargar la app."]},{"nombre":"App Inventor - Listas, bases de datos y juegos","contenidos":["Listas – Crear una app de tareas pendientes usando listas y botones.","Persistencia de datos – Usar TinyDB para guardar tareas de forma permanente.","Reloj e imágenes – Iniciar el juego \"Encuentra al impostor\" con listas de imágenes.","Sonidos y niveles – Agregar sonidos y un sistema de niveles que aumente la dificultad."]}]},{"id":"2-anio","nombre":"2.º año","objetivo":"Diseñar, programar y construir soluciones tecnológicas que integren lógica, robótica y desarrollo de aplicaciones, aplicando conceptos avanzados del pensamiento computacional y del trabajo interdisciplinario entre software y hardware. A través del uso de PSeInt, Arduino y App Inventor, se espera que los alumnos comprendan la estructura del pensamiento algorítmico, apliquen estructuras de control, integren programación con electrónica, diseñen sistemas automatizados, desarrollen aplicaciones móviles y promuevan la creatividad y la innovación tecnológica.","ejes":[{"nombre":"PSeInt - Introducción a la Programación","contenidos":["Algoritmos y pseudocódigo.","Relación entre lenguaje, algoritmo y programa.","Introducción al entorno PSeInt."]},{"nombre":"PSeInt - Variables y Operadores","contenidos":["Declaración de variables y tipos de datos.","Captura de datos desde teclado.","Uso de operadores aritméticos y de asignación.","Reglas de precedencia y operaciones."]},{"nombre":"PSeInt - Estructuras Condicionales","contenidos":["Estructuras condicionales simples (si-entonces).","Condicionales dobles (si-sino).","Condicionales anidados."]},{"nombre":"PSeInt - Estructuras Repetitivas","contenidos":["Bucles 'mientras' y 'hacer... mientras'.","Bucle 'para'.","Bucles anidados.","Diferenciación de tipos de repetición según el problema."]},{"nombre":"Robótica - Fundamentos de la Electrónica","contenidos":["Comprender voltaje, corriente y resistencia aplicando la Ley de Ohm.","Identificar componentes básicos y sus funciones en circuitos reales.","TinkerCAD - Simular circuitos eléctricos de forma digital.","Los Circuitos Eléctricos - Cómo se conectan los componentes."]},{"nombre":"Robótica - Introducción a la Robótica con Arduino","contenidos":["La Robótica - Qué es y su relación con la programación y la mecánica.","El Arduino UNO - Conocer la placa y su papel en proyectos automatizados.","Programando en Arduino - Controlar luces, sensores y motores.","El Buzzer y el Motor DC - Actuadores que generan sonido y movimiento."]},{"nombre":"Robótica - Sensores y Automatización","contenidos":["Lenguaje Arduino - Estructura del lenguaje y control de dispositivos.","El Protoboard - Organizar conexiones eléctricas.","El Sensor de Luz - Programar un sensor que detecta niveles de iluminación.","El Sensor de Temperatura - Medir temperatura y automatizar respuestas."]},{"nombre":"Robótica - Robótica Aplicada y Proyectos Integradores","contenidos":["El Monitor Serie - Visualizar datos en tiempo real.","El Sensor Ultrasonido - Medir distancias mediante ondas de sonido.","Ardubots Parte 1 - Construir el primer robot automatizado.","Ardubots Parte 2 - Mejorar el Ardubot con nuevos comandos y componentes."]},{"nombre":"App Inventor - Apps con usuarios y animaciones","contenidos":["Login básico – Introducción a inicios de sesión y creación de Mi Emocionario.","Validación de cuentas – Login con TinyDB, validación de usuarios.","Pantalla principal – Finalizar Mi Emocionario con gráficos de emociones.","Animaciones – Uso de Lienzo y Sprites para Mascota Virtual."]},{"nombre":"App Inventor - Integración, UI y APIs","contenidos":["Mascota virtual – Manejo de estados del personaje y procedimientos.","Interfaz de usuario – Diseño de colores, tipografía y mejoras visuales.","Uso de APIs (Pokémon I) – Introducción al Componente Web y consultas HTTP.","Uso de APIs (Pokémon II) – Interpretar JSON y enriquecer la app interactiva."]}]},{"id":"3-anio","nombre":"3.º año","objetivo":"Al finalizar el año, los estudiantes serán capaces de programar, diseñar y construir soluciones tecnológicas integrales, combinando la lógica de la programación, la creatividad del diseño digital y la aplicación práctica de la robótica. Se espera que dominen las bases de Python, comprendan la lógica detrás de la resolución algorítmica, desarrollen habilidades de diseño digital con Figma, apliquen conocimientos de electrónica y robótica, e integren conocimientos en proyectos interdisciplinarios.","ejes":[{"nombre":"Programación - Introducción a Python","contenidos":["Introducción al lenguaje Python y entorno Thonny.","Escritura del primer programa: Hola Mundo.","Declaración y uso de variables y operadores.","Tipos de datos y uso de cadenas de texto (strings)."]},{"nombre":"Programación - Condicionales y estructuras de decisión","contenidos":["Uso del tipo de dato booleano y operadores de comparación.","Aplicación de condicionales IF, ELSE y ELIF.","Manipulación de listas: creación, acceso y métodos.","Combinación de listas con estructuras condicionales.","Aplicación práctica en problemas de resolución."]},{"nombre":"Programación - Bucles y estructuras repetitivas","contenidos":["Introducción al bucle FOR para iteraciones sobre listas y rangos.","Uso del bucle WHILE y control de flujo con break y continue.","Bucles anidados para resolver patrones y estructuras más complejas.","Proyecto final con resolución de problemas usando diferentes tipos de bucles."]},{"nombre":"Programación - Funciones en Python","contenidos":["Definición y uso de funciones simples en Python.","Parámetros y argumentos: funciones con y sin retorno.","Funciones anidadas y buenas prácticas de uso.","Aplicación de funciones en proyectos prácticos."]},{"nombre":"Robótica - TinkerCAD Nivel 2","contenidos":["Disponible Q1 2026."]},{"nombre":"Figma - Diseño de interfaces digitales","contenidos":["Fundamentos de diseño de interfaz y exploración de Figma.","Propiedades de diseño: bordes, fondos, sombras, formas.","Personalización avanzada y ajustes de tamaño real.","Agrupación de elementos, inserción de imágenes y textos.","Creación de estructuras con auto-layout y componentes reutilizables.","Uso de plugins, scroll y diseño interactivo básico."]},{"nombre":"Figma - Proyecto UI musical","contenidos":["Inicio del proyecto 'SoundPulse': estructura y primeras secciones.","Desarrollo de componentes para álbumes y secciones sociales.","Implementación de scroll y barra de navegación fija.","Ventana de detalle de álbum con imagen y botones.","Integración del reproductor y finalización del diseño."]}]},{"id":"4-anio","nombre":"4.º año","objetivo":"Al finalizar el año, los estudiantes serán capaces de diseñar y desarrollar sitios web estructurados, estéticamente coherentes y con una comprensión inicial del papel de la inteligencia artificial. Se espera que comprendan el funcionamiento del desarrollo web, construyan páginas en HTML, incorporen estilos con CSS, dominen principios de diseño y posicionamiento, introduzcan nociones básicas sobre IA e integren todos los aprendizajes en proyectos prácticos.","ejes":[{"nombre":"HTML - Introducción al desarrollo web","contenidos":["Diferencia entre HTML, CSS y JavaScript y su función en la web.","Uso de etiquetas básicas para estructurar el contenido: header, nav, footer, entre otras.","Inserción de imágenes e íconos en el documento HTML.","Creación de listas y tablas para organizar información.","Proyecto: construcción del primer bosquejo de una página web."]},{"nombre":"HTML - Navegación, formularios y proyecto web","contenidos":["Creación de formularios en HTML con distintos tipos de campos.","Incorporación de enlaces internos y externos para conectar páginas.","Desarrollo de sitios multipágina.","Proyecto: diseño de una tienda online de videojuegos."]},{"nombre":"CSS - Estilos y diseño","contenidos":["Introducción al lenguaje CSS y su relación con HTML.","Uso de selectores por etiqueta, clase e id.","Modificación de colores, fuentes, bordes, márgenes y espacios.","Inserción y configuración de imágenes y fondos con opacidad.","Evaluación: aplicación de estilos para mejorar la estética del sitio web."]},{"nombre":"CSS - Posicionamiento y efectos visuales","contenidos":["Uso avanzado de colores, gradientes y efectos del cursor.","Aplicación de propiedades de posición para organizar elementos.","Ajuste visual con herramientas de desarrollador en el navegador.","Evaluación: personalización completa del diseño visual."]},{"nombre":"CSS - Animaciones y Flexbox","contenidos":["Creación de animaciones con propiedades CSS.","Aplicación práctica de estilos en el proyecto Tienda online.","Introducción a Flexbox para alinear y distribuir elementos en pantalla.","Implementación de contenedores y elementos flexibles.","Evaluación: sitio dinámico con Flexbox y animaciones."]},{"nombre":"Proyecto final: sitio completo con Flexbox","contenidos":["Desarrollo de un sitio web sobre películas favoritas utilizando Flexbox.","Incorporación de efectos visuales, nuevas secciones y barra de scroll personalizada.","Creación de multipáginas y navegación entre ventanas.","Proyecto final: construcción de un sitio web completo integrando HTML y CSS."]}]},{"id":"5-anio","nombre":"5.º año","objetivo":"Al finalizar el año, los estudiantes serán capaces de programar sitios web interactivos y dinámicos utilizando JavaScript, aplicando los principios de la lógica de programación, el modelado de datos y la manipulación del contenido web. Se busca que comprendan los fundamentos de JavaScript, desarrollen estructuras lógicas y algorítmicas, gestionen estructuras de datos complejas, implementen funciones y objetos, manipulen el DOM y desarrollen proyectos web integradores.","ejes":[{"nombre":"Fundamentos de JavaScript y cadenas (Strings)","contenidos":["Primeros pasos en JS: consola del navegador, tipos de datos, operadores.","Variables y constantes; envío de alertas y buenas prácticas.","Entrada/salida básica: escribir en la página y pedir datos al usuario.","Strings I & II: longitud, búsqueda de caracteres, reemplazos, validaciones y split."]},{"nombre":"JS - Estructuras de datos: Arrays y Maps","contenidos":["Arrays I: crear, acceder y modificar colecciones.","Arrays II: métodos clave (agregar, eliminar, buscar índices y existencia).","Maps I: pares clave–valor para estructurar datos.","Maps II: agregar, actualizar y eliminar por clave."]},{"nombre":"JS - Control de flujo: Condicionales","contenidos":["if/else: control del flujo y evaluación de condiciones.","if/else avanzados: múltiples condiciones y anidación.","switch: selección por caso según el valor de una expresión."]},{"nombre":"JS - Iteración: Bucles","contenidos":["while: ejecución repetitiva mientras la condición sea verdadera.","for: repeticiones determinadas y recorridos típicos.","for avanzado: utilidades, patrones y bucles anidados."]},{"nombre":"JS - Abstracción y modelado: Funciones y Objetos","contenidos":["Funciones: bloques reutilizables, parámetros y retorno.","Objetos I: modelar entidades con propiedades.","Objetos II: métodos como comportamientos de los objetos."]},{"nombre":"JS - DOM: Manipulación del documento","contenidos":["DOM I: seleccionar e interactuar con elementos desde JS.","DOM II: leer y modificar contenido y reflejar cambios en la página.","DOM III: crear, insertar y eliminar nodos HTML con JS.","DOM IV: atributos y estilos CSS aplicados vía JavaScript."]},{"nombre":"Proyectos Web","contenidos":["Proyecto 1: cronómetro con funciones clave.","Proyecto 1 (continuación): marcas/\"laps\" y mejoras.","Proyecto 2: juego clicker aplicando eventos y lógica.","Proyecto 2 (cierre): localStorage para puntajes, temporizador y más enemigos."]}]},{"id":"6-anio","nombre":"6.º año","objetivo":"Al finalizar el año, los estudiantes serán capaces de diseñar, programar e integrar aplicaciones web completas, consolidando los conocimientos de HTML, CSS y JavaScript, y comprendiendo los principios de interacción entre el FrontEnd y el BackEnd. Se espera que refuercen los fundamentos del desarrollo web, dominen la lógica de programación aplicada a la web, diseñen proyectos web funcionales y visualmente atractivos, desarrollen proyectos integradores, comprendan la arquitectura de las aplicaciones web e implementen bibliotecas externas.","ejes":[{"nombre":"Repaso general de desarrollo web","contenidos":["Repaso de las etiquetas HTML más importantes y su función estructural.","Revisión de las propiedades CSS más utilizadas con ejercicios prácticos.","Práctica sobre posicionamientos, alineamientos y efectos hover en CSS."]},{"nombre":"Repaso general de JavaScript","contenidos":["Repaso de conceptos y funciones básicas: tipos de datos, variables, strings y arrays.","Práctica con estructuras de control: IF, ELSE, SWITCH y bucles FOR.","Revisión de funciones, DOM y eventos aplicados a ejercicios prácticos."]},{"nombre":"Proyecto: Conversor de unidades","contenidos":["Creación del HTML base y aplicación de fondos con degradados.","Aplicación del estilo Glassmorfismo con CSS y mejoras visuales.","Programación de las funciones de conversión en JS.","Implementación de animaciones con movimiento aleatorio y publicación."]},{"nombre":"Proyecto: Portafolio web personal","contenidos":["Inicio del portafolio web como carta de presentación del estudiante.","Uso de variables en CSS y aplicación de estilos en la sección principal.","Desarrollo de la sección de proyectos con HTML y CSS.","Creación de la sección de habilidades y animaciones con JS.","Finalización y publicación del portafolio con enlaces a redes y proyectos."]},{"nombre":"Aplicaciones y conexión FrontEnd–BackEnd","contenidos":["Introducción al funcionamiento de aplicaciones web completas y uso de archivos JSON.","Acceso y manejo de datos JSON desde JavaScript.","Desarrollo de la aplicación de pizzería personalizada.","Programación para mostrar y transferir datos entre ventanas.","Finalización con bibliotecas externas y funcionalidades avanzadas."]}]}]}]};
+let curriculumData = curriculumDataOriginal.niveles ? curriculumDataOriginal.niveles : curriculumDataOriginal;
+let currentLevel = 'inicial';
+let currentGrade = null;
+
+const levelColors = {
+  'inicial': { bg: 'bg-level-inicial', bg10: 'bg-level-inicial/10', text: 'text-level-inicial', border: 'border-level-inicial', borderT: 'border-t-level-inicial', activeClass: 'bg-level-inicial text-white', textActive: 'text-white' },
+  'primario': { bg: 'bg-level-primario', bg10: 'bg-level-primario/10', text: 'text-level-primario', border: 'border-level-primario', borderT: 'border-t-level-primario', activeClass: 'bg-level-primario text-on-surface', textActive: 'text-on-surface' },
+  'secundario': { bg: 'bg-level-secundario', bg10: 'bg-level-secundario/10', text: 'text-level-secundario', border: 'border-level-secundario', borderT: 'border-t-level-secundario', activeClass: 'bg-level-secundario text-white', textActive: 'text-white' }
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  initDashboard();
+});
+
+function initDashboard() {
+  const tabs = document.querySelectorAll('.tab-btn');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetLevel = tab.getAttribute('data-target');
+      selectLevel(targetLevel);
+    });
+  });
+  
+  selectLevel('inicial');
+}
+
+function selectLevel(levelId) {
+  currentLevel = levelId;
+  const levelObj = curriculumData.find(l => l.id === levelId);
+  if(!levelObj) return;
+  
+  // Update Tabs UI
+  document.querySelectorAll('.tab-btn').forEach(t => {
+    t.className = "px-8 py-4 rounded-xl text-headline-md font-bold text-on-surface-variant bg-surface hover:bg-surface-variant hover:shadow-md transition-all flex items-center gap-3 tab-btn";
+  });
+  const activeTab = document.getElementById(`tab-${levelId}`);
+  if(activeTab) {
+    activeTab.className = `px-8 py-4 rounded-xl text-headline-md font-bold shadow-md transition-all flex items-center gap-3 tab-btn ${levelColors[levelId].activeClass}`;
+  }
+
+  // Auto-select first grade
+  if(levelObj.años && levelObj.años.length > 0) {
+    currentGrade = levelObj.años[0].id;
+  }
+  
+  renderContentArea();
+}
+
+window.selectGrade = function(gradeId) {
+  currentGrade = gradeId;
+  renderContentArea();
+}
+
+function renderContentArea() {
+  const levelObj = curriculumData.find(l => l.id === currentLevel);
+  if(!levelObj) return;
+  const gradeObj = levelObj.años.find(a => a.id === currentGrade);
+  if(!gradeObj) return;
+
+  const colors = levelColors[currentLevel];
+  
+  let gradesHtml = `<div class="flex gap-5 overflow-x-auto p-4 hide-scrollbar mb-10">`;
+  levelObj.años.forEach(grade => {
+    if(grade.id === currentGrade) {
+      gradesHtml += `<button class="px-8 py-3 ${colors.bg} ${colors.textActive} rounded-full text-title-lg font-bold whitespace-nowrap shadow-lg transition-transform scale-105 border-2 border-transparent">${grade.nombre}</button>`;
+    } else {
+      gradesHtml += `<button onclick="window.selectGrade('${grade.id}')" class="px-8 py-3 bg-surface text-on-surface-variant border-2 border-outline-variant/40 rounded-full text-title-lg whitespace-nowrap hover:bg-surface-variant transition-all cursor-pointer shadow-md hover:shadow-lg">${grade.nombre}</button>`;
+    }
+  });
+  gradesHtml += `</div>`;
+
+  let ejesHtml = `<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">`;
+  const iconList = ['extension', 'category', 'smart_toy', 'emoji_emotions', 'code', 'security', 'memory', 'terminal', 'science', 'laptop_mac', 'integration_instructions', 'school', 'admin_panel_settings', 'brush', 'psychology'];
+  
+  gradeObj.ejes.forEach((eje, index) => {
+    let listItemsHtml = '';
+    eje.contenidos.forEach((c, idx) => {
+      let hiddenClass = idx >= 3 ? 'hidden extra-item' : '';
+      listItemsHtml += `<li class="${hiddenClass}">${c}</li>`;
+    });
+    
+    let listHtml = `<ul class="text-body-md text-on-surface-variant space-y-2 ml-10 list-disc opacity-90 mt-4">${listItemsHtml}</ul>`;
+    
+    let verMasHtml = '';
+    if (eje.contenidos.length > 3) {
+      verMasHtml = `<button onclick="this.previousElementSibling.querySelectorAll('.extra-item').forEach(el => el.classList.toggle('hidden')); this.innerText = this.innerText === 'Ver más...' ? 'Ver menos' : 'Ver más...';" class="mt-4 text-label-md font-bold ${colors.text} hover:underline ml-10 flex items-center gap-1 focus:outline-none">Ver más...</button>`;
+    }
+    
+    // Choose icon based on text keywords
+    let icon = iconList[index % iconList.length];
+    const textLower = eje.nombre.toLowerCase();
+    if(textLower.includes('robótica') || textLower.includes('makey')) icon = 'smart_toy';
+    if(textLower.includes('ciudadanía') || textLower.includes('seguridad')) icon = 'security';
+    if(textLower.includes('emocional')) icon = 'emoji_emotions';
+    if(textLower.includes('programación') || textLower.includes('python') || textLower.includes('pseint')) icon = 'terminal';
+    if(textLower.includes('inteligencia') || textLower.includes('ia')) icon = 'psychology';
+    if(textLower.includes('figma') || textLower.includes('diseño') || textLower.includes('css')) icon = 'brush';
+    if(textLower.includes('app inventor')) icon = 'install_mobile';
+    if(textLower.includes('html') || textLower.includes('web')) icon = 'html';
+    
+    ejesHtml += `
+      <div class="glass-card card-shadow-custom rounded-2xl p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 border-t-8 ${colors.borderT} bg-white flex flex-col h-full">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="p-3 ${colors.bg10} rounded-xl ${colors.text} shadow-sm">
+            <span class="material-symbols-outlined text-3xl">${icon}</span>
+          </div>
+          <h5 class="text-title-lg font-bold text-on-surface leading-tight">${eje.nombre}</h5>
+        </div>
+        ${listHtml}
+        ${verMasHtml}
+      </div>
+    `;
+  });
+  ejesHtml += `</div>`;
+
+  const html = `
+    <div class="space-y-10 animate-fade-in" id="content-${currentLevel}">
+      ${gradesHtml}
+      <div class="flex flex-col gap-10">
+        <!-- Objective Top -->
+        <div class="${colors.bg10} rounded-3xl p-8 md:p-10 border-l-8 ${colors.border} shadow-sm w-full">
+          <h3 class="text-display-lg font-black ${colors.text} mb-4">Objetivo del año</h3>
+          <p class="text-headline-md text-on-surface-variant leading-relaxed">${gradeObj.objetivo}</p>
+        </div>
+        <!-- Thematic Axes Grid -->
+        <div class="w-full">
+          <h4 class="text-headline-lg font-bold text-on-surface mb-8 border-b-4 border-outline-variant/30 pb-4 flex items-center gap-3">
+            <span class="material-symbols-outlined ${colors.text} text-4xl">list_alt</span> Ejes temáticos y Contenidos
+          </h4>
+          ${ejesHtml}
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('content-area').innerHTML = html;
+}
+</script>
+</body></html>
